@@ -10,18 +10,23 @@
 namespace Album\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
 class AlbumController extends AbstractActionController
 {
     public function indexAction()
     {
-        return array();
     }
 
-    public function fooAction()
+    public function addAction()
     {
-        // This shows the :controller and :action parameters in default route
-        // are working when you browse to /album/album/foo
-        return array();
+    }
+
+    public function editAction()
+    {
+    }
+
+    public function deleteAction()
+    {
     }
 }
