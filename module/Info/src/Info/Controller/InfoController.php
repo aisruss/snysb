@@ -10,6 +10,7 @@
 namespace Info\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
 class InfoController extends AbstractActionController
 {
@@ -19,7 +20,7 @@ class InfoController extends AbstractActionController
     }
     public function aboutAction()
     {
-        return array();
+        return new ViewModel();
     }
 
     public function fooAction()
