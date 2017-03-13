@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="Snysb" basedir="." default="coretests">
+	<target name="composer" description="Installing Composer Dependencies">
+		<echo msg="Running Composer file to collect required framework files..." />
+		<exec executable="composer" checkreturn="true">
+			<arg value="install" />
+		</exec>
+		<echo msg="Composer install has completed, Framework files up to date..." />
+	</target>
+	<target name="coretests" depends="composer">
+		<echo msg="Running through all configured PHPUnit Tests" />
+<!-- 		<phpunit bootstrap="tests/bootstrap.php" pharlocation="/usr/local/bin/phpunit" haltonfailure="true" haltonerror="true"> -->
+<!-- 			<formatter type="plain" usefile="false" /> -->
+<!-- 			<batchtest> -->
+<!-- 				<fileset dir="tests/YamaCoreTest"> -->
+<!-- 					<include name="**/*Test.php"/> -->
+<!-- 				</fileset> -->
+<!-- 			</batchtest> -->
+<!-- 		</phpunit> -->
+	</target>
+	<target name="zpk" depends="coretests">
+		<echo msg="Creating Zend Application Package for Snysb" />
+     	<echo msg="Project Base dir = ${project.basedir}" />
+     	<exec command="php /usr/local/bin/zs-client.phar packZpk --folder='${project.basedir}' --destination='${project.basedir}' --name='application.zpk'" checkreturn="true" passthru="true"/>
+     	<echo msg="Package has been created and ready for deployment" />
+    </target>
+    <target name="deploy" depends="zpk">
+		<echo msg="Package is being sent out for deployment..." />
+     	<echo msg='${base}' />
+        <exec command="php /usr/local/bin/zs-client.phar installApp --zpk='${project.basedir}/application.zpk' --zsurl='${host}' --zskey='${key}' --zssecret='${secret}' --baseUri='${base}' --userAppName='Snysb' --userParams='${params}'" checkreturn="true" passthru="true"/>
+     	<echo msg="Package has been deployed..." />
+    </target>
+</project>
