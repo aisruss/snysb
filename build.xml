@@ -30,4 +30,4 @@
         <exec command="php /usr/local/bin/zs-client.phar installApp --zpk='${project.basedir}/application.zpk' --zsurl='${host}' --zskey='${key}' --zssecret='${secret}' --baseUri='${base}' --userAppName='Snysb' --userParams='${params}'" checkreturn="true" passthru="true"/>
      	<echo msg="Package has been deployed..." />
     </target>
-</project>
+</project> 
