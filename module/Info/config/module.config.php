@@ -1,15 +1,6 @@
 <?php
-namespace Info;
-
-use Zend\Router\Http\Literal;
-use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
-
 return [
     'controllers' => [
-        'factories' => [
-            Controller\InfoController::class => InvokableFactory::class,
-        ],
         'invokables' => [
             'Info\Controller\Info' => 'Info\Controller\InfoController',
         ],
@@ -35,6 +26,17 @@ return [
                     // as you solidify the routes for your module, however,
                     // you may want to remove it and replace it with more
                     // specific routes.
+                    'about' => [
+                        'type' => 'Literal',
+                        'options' => [
+                            'route' => '/about',
+                            'defaults' => [
+                                '__NAMESPACE__' => 'Info\Controller',
+                                'controller' => 'Info',
+                                'action' => 'about',
+                            ],
+                        ],
+                    ],
                     'default' => [
                         'type'    => 'Segment',
                         'options' => [
