@@ -26,17 +26,6 @@ return [
                     // as you solidify the routes for your module, however,
                     // you may want to remove it and replace it with more
                     // specific routes.
-                    'about' => [
-                        'type' => 'Literal',
-                        'options' => [
-                            'route' => '/about',
-                            'defaults' => [
-                                '__NAMESPACE__' => 'Info\Controller',
-                                'controller' => 'Info',
-                                'action' => 'about',
-                            ],
-                        ],
-                    ],
                     'default' => [
                         'type'    => 'Segment',
                         'options' => [
@@ -48,6 +37,17 @@ return [
                             'defaults' => [
                             ],
                         ],
+                    ],
+                ],
+            ],
+            'about' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/about',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'about',
                     ],
                 ],
             ],
