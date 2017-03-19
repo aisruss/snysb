@@ -50,6 +50,18 @@ return [
                         'action' => 'about',
                     ],
                 ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
             ],
         ],
     ],
