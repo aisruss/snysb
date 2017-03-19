@@ -63,6 +63,29 @@ return [
                     ],
                 ],
             ],
+            'join' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/join',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'join',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
         ],
     ],
     'view_manager' => [
