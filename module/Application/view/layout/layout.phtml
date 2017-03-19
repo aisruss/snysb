@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?= $this->headTitle('ZF Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
+        <?= $this->headTitle('SNYSB+')->setSeparator(' - ')->setAutoEscape(false) ?>
 
         <?= $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
@@ -15,6 +15,7 @@
             ->prependStylesheet($this->basePath('css/style.css'))
             ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
             ->prependStylesheet($this->basePath('css/bootstrap.min.css'))
+            ->prependStylesheet($this->basePath('css/business-casual.css'))
         ?>
 
         <!-- Scripts -->
@@ -33,12 +34,13 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="<?= $this->url('home') ?>">
-                        <img src="<?= $this->basePath('img/zf-logo-mark.svg') ?>" height="28" alt="Zend Framework <?= \Application\Module::VERSION ?>"/>&nbsp;Skeleton Application
+                        <img src="<?= $this->basePath('img/favicon.ico') ?>" height="28" alt="SNYSB+  <?= \Application\Module::VERSION ?>"/>&nbsp;SNYSB+
                     </a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
+                        <li class=""><a href="<?= $this->url('home') ?>">Home</a></li>
+                        <li class=""><a href="<?= $this->url('about') ?>">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +49,7 @@
             <?= $this->content ?>
             <hr>
             <footer>
-                <p>&copy; 2005 - <?= date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
+                <p>&copy; 1974 - <?= date('Y') ?> by SNYSB+. All rights reserved.</p>
             </footer>
         </div>
         <?= $this->inlineScript() ?>
