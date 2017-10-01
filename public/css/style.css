@@ -1,11 +1,6 @@
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-color: #f2f2f2;
+background: url('https://www.google.com/images/srpr/logo3w.png');
 }
 
 
@@ -31,14 +26,7 @@ div.container a.navbar-brand > img {
       border-radius: 0;
       opacity: 0.1;
     }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-      opacity: 0.1;
-    }
-    
+
   .carousel-inner img {
   opacity: 0.1;
       width: 100%; /* Set width to 100% */
