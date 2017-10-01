@@ -11,12 +11,13 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    padding-top: 60px;
 }
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       border-radius: 0;
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
   .carousel-inner img {
@@ -35,7 +36,7 @@ body {
   }
 
 .well {
-    opacity:0.8;
+    opacity:0.9;
 }
 
 @well-bg {
