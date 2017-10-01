@@ -23,7 +23,7 @@ p {
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       border-radius: 0;
-      opacity: 0.9;
+      opacity: 0.95;
       background: #ffffff;
       padding-right: 3px;
       font-size: 1.25em;
@@ -32,7 +32,7 @@ p {
     
     .para {
     	radius: 60;
-      opacity: 0.9;
+      opacity: 0.95;
       background: #ffffff;
     }
 
