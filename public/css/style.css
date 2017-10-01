@@ -27,7 +27,8 @@ body {
 }
 
 div.containter transparent{
-	background-color: rgba(245, 245, 245, 1);
+	background-color: #	f8f8ff;
+	border-radius: 20;
 }
 
 div.container a.navbar-brand > img {
