@@ -23,13 +23,13 @@ p {
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       border-radius: 0;
-      opacity: 0.85;
+      opacity: 0.9;
       background: #ffffff;
     }
     
     .para {
     	radius: 60;
-      opacity: 0.85;
+      opacity: 0.9;
       background: #ffffff;
     }
 
