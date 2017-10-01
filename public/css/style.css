@@ -35,6 +35,12 @@ div.container a.navbar-brand > img {
     border-radius: 20;
 }
 
+#content-wrapper {
+	position:absolute;
+	z-index:1 !important;
+	min-width:100%;
+	min-height:100%;
+}
 .well {
     opacity:0.1;
 }
