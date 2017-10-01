@@ -36,9 +36,7 @@ div.container a.navbar-brand > img {
 }
 
 .well {
-/*     background: transparent; */
-    background-color: #fffff;
-    opacity:0.85;
+    opacity:0.1;
 }
 
     /* Remove the navbar's default margin-bottom and rounded borders */ 
