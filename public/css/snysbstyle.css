@@ -21,7 +21,8 @@ body {
     
     .para {
     	radius: 60;
-      opacity: 1;
+      opacity: 0.9;
+      background: #ffffff;
     }
 
   .carousel-inner img {
