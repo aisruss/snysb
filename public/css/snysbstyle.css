@@ -1,0 +1,54 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      opacity: 0.1;
+    }
+    
+    div.container a.navbar-brand > img {
+    display: inline;
+    margin-right: 4px;
+    margin-top: -2px;
+    opacity: 0.9;
+    border-radius: 20;
+}
+    
+
+  .carousel-inner img {
+  opacity: 0.1;
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+      max-height: 300px;
+      max-width: 400px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+.well {
+    opacity:0.3;
+}
+
+@well-bg {
+	rgb(227, 235, 246);
+}
