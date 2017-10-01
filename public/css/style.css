@@ -37,7 +37,7 @@ div.container a.navbar-brand > img {
     display: inline;
     margin-right: 4px;
     margin-top: -2px;
-    opacity: 0.5;
+    opacity: 0.9;
     border-radius: 20;
 }
 
@@ -45,14 +45,14 @@ div.container a.navbar-brand > img {
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      opacity: 0.5;
+      opacity: 0.9;
     }
     
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
-      opacity: 0.5;
+      opacity: 0.9;
     }
     
   .carousel-inner img {
