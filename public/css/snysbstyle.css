@@ -20,9 +20,8 @@ body {
     }
     
     .para {
-    	border-radius: 60;
-    	background: #051219;
-      opacity: 0.95;
+    	radius: 60;
+      opacity: 1;
     }
 
   .carousel-inner img {
