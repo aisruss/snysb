@@ -15,9 +15,8 @@ body {
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      margin-bottom: 0;
       border-radius: 0;
-      opacity: 0.5;
+      opacity: 0.8;
     }
 
   .carousel-inner img {
@@ -36,7 +35,7 @@ body {
   }
 
 .well {
-    opacity:0.5;
+    opacity:0.8;
 }
 
 @well-bg {
