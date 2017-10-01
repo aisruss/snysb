@@ -35,7 +35,7 @@ div.container a.navbar-brand > img {
     border-radius: 20;
 }
 
-.panel-default{
+.panel-body{
 /*     background: transparent; */
     background-color: #ff69b4;
     opacity: 0.9;
