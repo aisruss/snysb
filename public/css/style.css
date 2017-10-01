@@ -39,18 +39,18 @@ div.container a.navbar-brand > img {
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-      opacity: 0.9;
+      opacity: 0.1;
     }
     
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
-      opacity: 0.9;
+      opacity: 0.1;
     }
     
   .carousel-inner img {
-  opacity: 0.5;
+  opacity: 0.1;
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
