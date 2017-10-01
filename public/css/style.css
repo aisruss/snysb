@@ -35,6 +35,11 @@ div.container a.navbar-brand > img {
     border-radius: 20;
 }
 
+.panel {
+	opacity: 1;
+    border-radius: 20;
+}
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
