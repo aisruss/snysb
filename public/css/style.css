@@ -37,6 +37,8 @@ div.container a.navbar-brand > img {
     display: inline;
     margin-right: 4px;
     margin-top: -2px;
+    opacity: 0.5;
+    border-radius: 20;
 }
 
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -52,6 +54,7 @@ div.container a.navbar-brand > img {
     }
     
   .carousel-inner img {
+  opacity: 0.5;
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
