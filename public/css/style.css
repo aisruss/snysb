@@ -26,7 +26,7 @@ body {
     background-color: #57a900;
 }
 
-transparent {
+div.container transparent {
 	opacity: 0.5;
     background-color: #f2f2f2;
     padding: 25px;
