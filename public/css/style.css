@@ -26,8 +26,8 @@ body {
     background-color: #57a900;
 }
 
-div.container {
-	background-color: rgba(245, 245, 245, 0.4);
+div.transparent{
+	background-color: rgba(245, 245, 245, 1);
 }
 
 div.container a.navbar-brand > img {
