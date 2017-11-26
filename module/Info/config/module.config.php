@@ -109,6 +109,29 @@ return [
                     ],
                 ],
             ],
+            'concerts' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/concerts',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'concerts',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
         ],
     ],
     'view_manager' => [
