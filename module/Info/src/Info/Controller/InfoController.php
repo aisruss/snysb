@@ -22,6 +22,14 @@ class InfoController extends AbstractActionController
     {
         return new ViewModel();
     }
+    public function charityAction()
+    {
+        return new ViewModel();
+    }
+    public function friendsAction()
+    {
+        return new ViewModel();
+    }
     public function joinAction()
     {
         return new ViewModel();
