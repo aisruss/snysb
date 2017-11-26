@@ -26,6 +26,10 @@ class InfoController extends AbstractActionController
     {
         return new ViewModel();
     }
+    public function concertsAction()
+    {
+        return new ViewModel();
+    }
     public function contactAction()
     {
         return new ViewModel();
