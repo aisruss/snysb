@@ -132,6 +132,29 @@ return [
                     ],
                 ],
             ],
+            'newsletter' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/newsletter',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'newsletter',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
         ],
     ],
     'view_manager' => [

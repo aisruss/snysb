@@ -34,6 +34,10 @@ class InfoController extends AbstractActionController
     {
         return new ViewModel();
     }
+    public function newsletterAction()
+    {
+        return new ViewModel();
+    }
 
     public function fooAction()
     {
