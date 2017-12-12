@@ -41,8 +41,8 @@ p {
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
-      max-height: 300px;
-      max-width: 400px;
+      max-height: 400px;
+      max-width: 300px;
       radius: 60;
   }
 
