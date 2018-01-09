@@ -63,6 +63,52 @@ return [
                     ],
                 ],
             ],
+            'charity' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/charity',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'charity',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'friends' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/friends',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'friends',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
             'join' => [
                 'type' => 'Literal',
                 'options' => [
@@ -94,6 +140,52 @@ return [
                         '__NAMESPACE__' => 'Info\Controller',
                         'controller' => 'Info',
                         'action' => 'contact',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'concerts' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/concerts',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'concerts',
+                    ],
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
+                    'default' => [
+                        'type' => 'Segment',
+                        'options' => [
+                            'route' => '/[:action]',
+                            'constraints' => [
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'newsletter' => [
+                'type' => 'Literal',
+                'options' => [
+                    'route' => '/newsletter',
+                    'defaults' => [
+                        '__NAMESPACE__' => 'Info\Controller',
+                        'controller' => 'Info',
+                        'action' => 'newsletter',
                     ],
                 ],
                 'may_terminate' => true,
