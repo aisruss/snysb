@@ -10,7 +10,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 p {
@@ -21,12 +21,12 @@ p {
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      border-radius: 0;
       opacity: 0.95;
       background: #ffffff;
-      padding-right: 3px;
       font-size: 1.25em;
     	color: #000;
+    	position: static;
+    	z-index: 10000;
     }
     
     .para {
@@ -34,6 +34,10 @@ p {
       opacity: 0.95;
       background: #ffffff;
     }
+    
+    img {
+    max-width: 100%;
+}
 
   .carousel-inner img {
 /*       width: 100%; Set width to 100% */
