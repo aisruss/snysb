@@ -5,12 +5,12 @@
  */
 
 body {
-    background: url('../img/background.jpg') no-repeat center center fixed;
+    background: url('../img/wallpapers/gradient.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 p {
@@ -38,6 +38,19 @@ p {
     img {
     max-width: 100%;
 }
+
+.logoplace {
+    position: relative;
+    top: 2px;
+    left: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .logoplace {
+      display: none; 
+    }
+  }
 
   .carousel-inner img {
 /*       width: 100%; Set width to 100% */
