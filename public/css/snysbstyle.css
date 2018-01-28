@@ -11,6 +11,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     padding-top: 10px;
+    color: #000;
 }
 
 p {
@@ -21,17 +22,18 @@ p {
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      opacity: 0.95;
+      opacity: 0.8;
+      radius: 60;
       background: #ffffff;
       font-size: 1.25em;
-    	color: #000;
     	position: static;
     	z-index: 10000;
     }
     
     .para {
     	radius: 60;
-      opacity: 0.95;
+      opacity: 0.8;
+      color: #000;
       background: #ffffff;
     }
     
@@ -43,14 +45,17 @@ p {
     position: relative;
     top: 2px;
     left: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (max-width: 600px) {
-    .logoplace {
-      display: none; 
-    }
-  }
+/* @media (max-width: 600px) { */
+/*     .logoplace { */
+/*       display: none;  */
+/*     } */
+/*   } */
 
   .carousel-inner img {
 /*       width: 100%; Set width to 100% */
@@ -68,10 +73,9 @@ p {
     }
   }
 
-/* footer { */
-/*  height: 3em; */
-/*  bottom: 0;  */
-/*  text-align: center; */
-/*  background: rgba(255,255,255,0.2); */
-/*  width: 100%; */
-/* } */
+footer {
+ height: 3em;
+ bottom: 0; 
+ text-align: center;
+ width: 100%;
+}

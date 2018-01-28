@@ -25,13 +25,13 @@
         ?>
     </head>
     <body>
-    <img src="<?= $this->basePath('img/black-logo.png') ?>" class="logoplace" height="100" />
     <div class="container">
+    <img src="<?= $this->basePath('img/black-logo.png') ?>" class="logoplace" height="150" />
     <nav class="navbar navbar-default">
      <a class="navbar-brand" href="<?= $this->url('home') ?>">
       	<img src="<?= $this->basePath('img/home.png') ?>" height="35" alt="SNYSB+  <?= \Application\Module::VERSION ?>"/>
       </a>
-    <div class="navbar-header">
+          <div class="navbar-header">
    
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -54,11 +54,8 @@
         <li><a href="<?= $this->url('newsletter') ?>">Newsletter</a></li>
       </li>
       </ul>
-<!--       <ul class="nav navbar-nav navbar-right"> -->
-<!--         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-<!--       </ul> -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.facebook.com/snysb1974/" target="_blank" ><img src="<?= $this->basePath('img/facebook.png') ?>" height="28" alt="SNYSB+  <?= \Application\Module::VERSION ?>"/></a></li>
+        <li><a href="https://www.facebook.com/SouthNorfolkYouthSymphonicBand/" target="_blank" ><img src="<?= $this->basePath('img/facebook.png') ?>" height="28" alt="SNYSB+  <?= \Application\Module::VERSION ?>"/></a></li>
       </ul>
     </div>
     </nav>
@@ -68,6 +65,8 @@
             <?= $this->content ?>
             </div>
         <?= $this->inlineScript() ?>
-        </div>
     </body>
+    <footer>
+    <img src="<?= $this->basePath('img/footer.png') ?>" class="logoplace" height="100" />
+    </footer>
 </html>
