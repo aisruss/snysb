@@ -22,8 +22,8 @@ p {
 
  /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      opacity: 0.8;
-      radius: 60;
+      opacity: 0.9;
+      radius: 70;
       background: #ffffff;
       font-size: 1.25em;
     	position: static;
@@ -32,7 +32,7 @@ p {
     
     .para {
     	radius: 60;
-      opacity: 0.8;
+      opacity: 0.9;
       color: #000;
       background: #ffffff;
     }
